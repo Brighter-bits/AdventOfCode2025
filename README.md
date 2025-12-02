@@ -8,3 +8,6 @@ properly. However, I kept being an idiot while trying to use the mods so I chang
 # Day 2
 
 I got slightly delayed, but today wasn't too bad (though I feel like my solution is quite slow... again)
+
+Placement: 23818
+
