@@ -19,3 +19,12 @@ However, a fun off by one error messed me up badly for part 2, so I guess it's k
 
 
 Placement: 22113
+
+# Day 4
+
+I was distracted by some practice I was doing so I completely forgot about todays advent. Quite easy surprisingly, though I feel like my solution is slightly inefficient... again. However, the input is small
+enough that it runs quite quickly.
+
+I did unfortunately have a slight problem where I got my xs and yx mixed round, as well as the problem that negative indexes wrap around to the back of the list. But otherwise, there weren't too many errors.
+
+Placement: 21843
