@@ -28,3 +28,14 @@ enough that it runs quite quickly.
 I did unfortunately have a slight problem where I got my xs and yx mixed round, as well as the problem that negative indexes wrap around to the back of the list. But otherwise, there weren't too many errors.
 
 Placement: 21843
+
+# Day 5
+
+The practice yesterday did not pay off... Todays was quite easy and I got the general idea quite quickly. Though bounds are a theme so far this year (maybe that's the project management stuff?)
+
+I actually managed to predict that I would need a plus one luckily, however I quickly realised that my elifs only work if the bounds are ordered from the first element smallest to largest, which was my only
+error today.
+
+One thing I don't like is my wall of elifs, but I think it's fine overall, and hardly as bad as the one I did for the fishbones in EC.
+
+Placement: 14447
