@@ -39,3 +39,55 @@ error today.
 One thing I don't like is my wall of elifs, but I think it's fine overall, and hardly as bad as the one I did for the fishbones in EC.
 
 Placement: 14447
+
+# Day 6
+
+Oops, I completely forgot that AOC ran over the weekend. This was a relatively simple puzzle that reminded me that I need to eventually learn how to use numpy properly.
+
+I only had one error, where during the while loop in part two, it wouldn't add the final calculation, but that was quickly fixed.
+
+Placement: 54048
+
+# Day 7
+
+My eternal enemy: Reading the question; has once again attacked me. I calculated how many of the bottom parts get hit by the laser... turns out I wanted how many times it split.
+
+Placement: 44372
+
+# Day 8
+
+This looks really complicated, however, it shouldn't be too bad if I start working on it.
+
+I kept thinking about how to find the distance between the two points, trying to do sqrt(sqrt(x^2 + y^2)^2 + z^2). However, the square root and index cancel out to make sqrt(x^2 + y^2 + z^2).
+
+Other than that, I mostly had small errors like using the wrong variables and running the code twice without changing anything.
+I still feel that the code could run faster by eliminating redundant connections, but the code works in its current state, and so I'll live with it.
+
+I should probably get better at naming my variables.
+
+Placement: 37238
+
+# Day 9:
+
+This feels deceptively easy, and incredibly similar to the previous day (which I am still catching up from)
+
+Ahhh, this part 2 is a worse problem. It seems similar to the Everybody Codes whistling maze. However, the old code from that doesn't seem to work with this after some poking about.
+
+I have however, had a brilliant idea. We take the x coordinate, and check how many walls are to the left of it, if it's even, then we've gone into a wall, then left it.
+Meanwhile if it is odd, then we are inside. So we just check all four corners to see if they are all inside.
+
+Slight amendment to that, if the walls look liked this:
+
+```
+#### #####
+#  # #   #
+#  ###   #
+#        #
+##########
+```
+
+Then going from one corner to the other would be allowed, when it shouldn't be. What I actually need is to check they both have the same number of wall crosses and that they are odd.
+A second change, if two points share a horizontal coordinate, you don't need to check the vertical ray.
+
+I give up with all the fancy maths, I'm going to brute force this as it's already the 12th and I'm still stuck on this day.
+Nevermind, I can't even make a grid.
