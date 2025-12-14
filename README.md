@@ -91,3 +91,7 @@ A second change, if two points share a horizontal coordinate, you don't need to 
 
 I give up with all the fancy maths, I'm going to brute force this as it's already the 12th and I'm still stuck on this day.
 Nevermind, I can't even make a grid.
+
+I finally have some free time over the weekend, so I've now managed to learn coordinate compression, which is actually really cool. It even allows me to properly visualise large graphs in the terminal!
+
+This took way too long, and I don't want to do day 10 tonight.
