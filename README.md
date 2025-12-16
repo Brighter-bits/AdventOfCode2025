@@ -95,3 +95,16 @@ Nevermind, I can't even make a grid.
 I finally have some free time over the weekend, so I've now managed to learn coordinate compression, which is actually really cool. It even allows me to properly visualise large graphs in the terminal!
 
 This took way too long, and I don't want to do day 10 tonight.
+
+Placement: 28287 (though this is days afterwards...)
+
+# Day 10
+
+Okay, I have no idea how to tackle this, and the fact that Joltage is unecessary makes me very afraid.
+
+Although, it seems that pressing a single button twice is basically useless, meaning it's closer to those games where you have to flip switches to turn lights on and off. So in reality, the number of
+possibilities is 2^{num buttons} which isn't that bad.
+
+Actually, yes I'm going to brute force it and see what happens.
+
+The only problem is that I will need to XOR the buttons, which is a problem when using lists. This may be a bad idea, but I'm going to try and use binary.
