@@ -1,12 +1,13 @@
 from copy import deepcopy
 class Line():
-    def __init__(self, lights, joltage, buttons):
+    def __init__(self, lights, joltage, buttons, length):
         self.lights = lights
         self.joltage = joltage
+        self.length = length
         tempbuttons = deepcopy(buttons)
         self.buttons = []
         for button in tempbuttons:
-            Xorable = ["0b"] + ["0" for i in range(len(bin(lights))-1)]
+            Xorable = ["0b"] + ["0" for i in range(length)]
             for num in button:
                 Xorable[num+1] = "1"
             self.buttons.append(int("".join(Xorable), 2))
@@ -34,9 +35,10 @@ def Solve(part):
             lights = "0b"
             for j in list(inp[i][0].strip("[]")):
                 lights += "1" if j == "#" else "0"
+            length = len(lights)-2
             joltage = list(map(int, inp[i][-1].strip("{}").split(",")))
             buttons = list(map(lambda x: list(map(int, x.strip("()").split(","))), inp[i][1:-1]))
-            Lines.append(Line(int(lights, 2), joltage, buttons))
+            Lines.append(Line(int(lights, 2), joltage, buttons, length))
         total = 0
         for machine in Lines:
             count = 1

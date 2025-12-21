@@ -108,3 +108,5 @@ possibilities is 2^{num buttons} which isn't that bad.
 Actually, yes I'm going to brute force it and see what happens.
 
 The only problem is that I will need to XOR the buttons, which is a problem when using lists. This may be a bad idea, but I'm going to try and use binary.
+
+That actually worked really well. New problem, Joltage. It seems to be another simultaneous equation problem, which means I may have to break out numpy.
