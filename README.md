@@ -110,3 +110,8 @@ Actually, yes I'm going to brute force it and see what happens.
 The only problem is that I will need to XOR the buttons, which is a problem when using lists. This may be a bad idea, but I'm going to try and use binary.
 
 That actually worked really well. New problem, Joltage. It seems to be another simultaneous equation problem, which means I may have to break out numpy.
+
+
+It's a couple (10 days) days later and I've come back to this. And oh, it's so much worse than I expected. Looking at the reddit, I've found a couple of solutions that I might combine.
+
+These are [a numpy solution](https://www.reddit.com/r/adventofcode/comments/1plzhps/2025_day_10_part_2_pivot_your_way_to_victory/) and [an interesting recursive solution](https://www.reddit.com/r/adventofcode/comments/1pk87hl/2025_day_10_part_2_bifurcate_your_way_to_victory/)

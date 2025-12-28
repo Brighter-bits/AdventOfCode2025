@@ -1,2 +1,4 @@
 *.txt
 dump.py
+.venv/
+shell.nix
