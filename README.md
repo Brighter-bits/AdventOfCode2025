@@ -115,3 +115,53 @@ That actually worked really well. New problem, Joltage. It seems to be another s
 It's a couple (10 days) days later and I've come back to this. And oh, it's so much worse than I expected. Looking at the reddit, I've found a couple of solutions that I might combine.
 
 These are [a numpy solution](https://www.reddit.com/r/adventofcode/comments/1plzhps/2025_day_10_part_2_pivot_your_way_to_victory/) and [an interesting recursive solution](https://www.reddit.com/r/adventofcode/comments/1pk87hl/2025_day_10_part_2_bifurcate_your_way_to_victory/)
+
+Actually, after rereading the interesting recursive solution, I've found it's way easier than I realised, so I'm going to once again put off learning numpy properly (and learning gaussian elimination which I think I understand but probably don't).
+
+The recursive solution has definitely heavily decreased the time it takes to run the program. But my computer is still spending an incredibly long time on only the third line of my input.
+
+Okay, so my problem was that I wasn't including other possibilities into my solution. Meaning that, if you break the solution down into two parts: The recursive, and the extra bit. Just because you have the smallest extra bit, does not mean you will get a tractable recursive.
+
+I have really poorly explained that, but I'm behind so...
+
+I have suddenly realised why the algorithm is recursive. This is a mess, so I'm going to leave it overnight and just hope for the best.
+
+Leaving it overnight did not help. My current problem is that if I have something like {4, 4, 4} this gets halved to {2, 2, 2} which is all even. I feel like I'm just being an idiot, but I can't figure out what to do from here.
+
+It turns out, I have to allow just pressing 0 buttons? And I kept adding on old bits of code which no longer worked which I just assumed would work perfectly for some reason.
+
+Again, I'm very unhappy with my relatively slow, unreadable, spaghetti solution.
+
+But it's over.
+
+Placement (does this even matter anymore??): 22234
+
+# Day 11
+
+Part 1 seems to just be a graph + some recursion.
+
+Part 2 aswell?
+
+Oh my god, that was so easy!
+
+Placement: 27968 # I guess that's why more people have completed it.
+
+# Day 12
+
+I hate shapes. So much.
+
+Okay, I'm fairly sure this isn't possible because I'm pretty sure all packing problems are supposed to basically be impossible to solve programatically in a reasonable time.
+
+Just searched it up, I'm pretty sure most of them are...
+
+I tried 0, it did not work. I'm going to make a rough guess on how much space each block paired up would take then just start making some stupid assumptions. There are only 101 possibilities and I've already tried one. Nevermind, I miscounted there are 1000.
+
+Well, it's also not 100 nor 1000 I guess.
+
+I got the right answer on my first attempt at solving the puzzle with my terrible numbers. My only problem was initialising ```total = 1```. Which was, to put it simply, very stupid of me.
+
+I might go do another year now, or just relax and get on with other work. But, more importantly;
+
+Christmas is saved! And it's definitely not nearly New Year's.
+
+Placement: 18110
